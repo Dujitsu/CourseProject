@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+	<title>PoELinker.html</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="screen2.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="projectJS.js"></script>
+</head>
+<script>
+var data = new Array();
+//window.onload = acceptData();
+</script>
+<body onload = "acceptData()">
+<div id="header">
+	<h1>Fusing Calculator</h1>
+</div>
+<p id="navigation"><a href="index.htm">Home</a> |
+				   <a href='javascript:sendData("jeweller.html?");'>Jeweller</a> |
+				   <a> Fusing </a> |
+				   <a href='javascript:sendData("chromatic.html?");'>Chromatic </a> |
+				   <a href='javascript:sendData("divine.html?");'>Divine </a></p>
+	<div id="fusingIntro"><h2>Click the orb of fusing until you get a six link.</h2></div>
+	<button id="useFusing" onclick="Fusing()">Use Orb of Fusing</button>
+	<div class="rectangle" id="rectangleFusing"></div>
+	<!--<div class="forReference"><img src = "images/InGameSixLinkReference.png" alt="development reference image"></div>-->
+	<div><img src = "croppedImages/socket-blue.png" id="soloSocket" alt="socket"></div>
+	<div><img src = "croppedImages/socket-blue.png" id="socket1" alt="socket1"></div>
+	<div><img src = "croppedImages/socket-blue.png" id="socket2" alt="socket2"></div>
+	<div><img src = "croppedImages/socket-red.png" id="socket3" alt="socket3"></div>
+	<div><img src = "croppedImages/socket-green.png" id="socket4" alt="socket4"></div>
+	<div><img src = "croppedImages/socket-red.png" id="socket5" alt="socket5"></div>
+	<div><img src = "croppedImages/socket-green.png" id="socket6" alt="socket6"></div>
+	
+	<div><img src = "croppedImages/link-hor.png" id="link1" alt="link1"></div>
+	<div><img src = "croppedImages/link-ver.png" id="link2" alt="link2"></div>
+	<div><img src = "croppedImages/link-hor.png" id="link3" alt="link3"></div>
+	<div><img src = "croppedImages/link-ver.png" id="link4" alt="link4"></div>
+	<div><img src = "croppedImages/link-hor.png" id="link5" alt="link5"></div>
+	
+	<div id="links">
+		<form> <!-- starts at 2 link since a link always connects two sockets -->
+			<label for="link#2">2 Link:</label>
+			<input type="text" id="linkNum2" value = 0 readonly="readonly"><br>
+			<label for="link#3">3 Link:</label>
+			<input type="text" id="linkNum3" value = 0 readonly="readonly"><br>
+			<label for="link#4">4 Link:</label>
+			<input type="text" id="linkNum4" value = 0 readonly="readonly"><br>
+			<label for="link#5">5 Link:</label>
+			<input type="text" id="linkNum5" value = 0 readonly="readonly"><br>
+			<label for="link#6">6 Link:</label>
+			<input type="text" id="linkNum6" value = 0 readonly="readonly"><br>
+		</form>
+	</div>
+	<a href='javascript:sendData("chromatic.html?");'><h3>Next: Chromatic Orb</h3></a>
+<div class="footer">
+	<p>This site is not associated with <a href="http://www.grindinggear.com/">Grinding Gear Games</a> in any way.</p>
+</div>
+</body>
+</html>

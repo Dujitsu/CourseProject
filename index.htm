@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<title>PoELinker.html</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="screen2.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="projectJS.js"></script>
+<style>
+.footer {
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+	margin: 0;
+	clear:both;
+	width:25%;
+}
+</style>
+</head>
+<body>
+<script>
+var data = new Array();
+</script>
+<div id="header">
+
+	<h1>Welcome to PoELinker</h1>
+	<h2>Offering jeweller, fusing, chromatic, and divine calculators.</h2>
+</div>
+<p id="navigation"><a>Home</a> |
+				   <a href='javascript:sendData("jeweller.html?");'>Jeweller </a> |
+				   <a href='javascript:sendData("fusing.html?");'>Fusing </a> |
+				   <a href='javascript:sendData("chromatic.html?");'>Chromatic </a> |
+				   <a href='javascript:sendData("divine.html?");'>Divine </a></p>
+	<div class="HomeIntro"><h2>To begin simply choose an armour type.</h2></div>
+	
+	<!--<div class="rareDropdown">
+		<ul><li>Rare Chestpiece
+			<ul><li><id="GloriousPlate">Glorious Plate</li>
+				<li>Assassin's Garb</li>
+				<li>Vaal Regalia</li>
+				<li>Triumphant Lamellar</li>
+				<li>Saintly Chainmail</li>
+				<li>Carnal Armour</li>
+			</ul>
+		</li></ul>
+	</div>//May not have time for this section -->
+	<div class="uniqueDropdown">
+		<ul><li>Unique Chestpiece
+			<ul><li><span><button type="button" onclick="Kaom()">Kaom's Heart</button></span></li> <!--Kaom's Heart cannot have sockets, but can be Divine Orbed-->
+				<li><span><button type="button" onclick="Queen()">Queen of the Forest</button></span></li>
+				<li><span><button type="button" onclick="Shavronne()">Shavronne's Wrappings</button></span></li>
+				<li><span><button type="button" onclick="Coil()">Lightning Coil</button></span></li>
+				<li><span><button type="button" onclick="Voll()">Voll's Protector</button></span></li> <!-- Does not have variable stats, Cannot be Divined -->
+				<li><span><button type="button" onclick="Carcass()">Carcass Jack</button></span></li>
+			</ul>
+		</li></ul>
+	</div>
+	<div class="rectangle" id="rectangleIndex"></div>
+	<a href='javascript:sendData("jeweller.html?");'><h3>Next: Jeweller's Orb</h3></a>
+<div class="footer">
+	<p>This site is not associated with <a href="http://www.grindinggear.com/">Grinding Gear Games</a> in any way.</p>
+</div>
+</body>
+</html>

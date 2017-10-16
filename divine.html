@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+	<title>PoELinker.html</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="screen2.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="projectJS.js"></script>
+</head>
+<script>
+var data = new Array();
+var colorData = new Array("blue", "blue", "blue", "red", "green", "red", "green");
+</script>
+<body onload = "acceptData()">
+<div id="header">
+	<h1>Divine Calculator</h1>
+</div>
+<p id="navigation"><a href="index.htm">Home</a> |
+				   <a href="jeweller.html">Jeweller</a> |
+				   <a href="fusing.html">Fusing</a> |
+				   <a href="chromatic.html">Chromatic</a> |
+				   <a>Divine </a></p>
+	<div id="divineIntro"><h2>Click the divine orb until you get a perfect item.</h2></div>
+	<button id="useDivine" onclick = "Divine()">Use Divine Orb</button>
+	<div class="rectangle" id="rectangleDivine"></div>
+	<!--<div class="forReference"><img src = "images/InGameSixLinkReference.png" alt="development reference image"></div>-->
+	<div><img src = "croppedImages/socket-blue.png" id="soloSocket" alt="socket"></div>
+	<div><img src = "croppedImages/socket-blue.png" id="socket1" alt="socket1"></div>
+	<div><img src = "croppedImages/socket-blue.png" id="socket2" alt="socket2"></div>
+	<div><img src = "croppedImages/socket-red.png" id="socket3" alt="socket3"></div>
+	<div><img src = "croppedImages/socket-green.png" id="socket4" alt="socket4"></div>
+	<div><img src = "croppedImages/socket-red.png" id="socket5" alt="socket5"></div>
+	<div><img src = "croppedImages/socket-green.png" id="socket6" alt="socket6"></div>
+	
+	<div><img src = "croppedImages/link-hor.png" id="link1" alt="link1"></div>
+	<div><img src = "croppedImages/link-ver.png" id="link2" alt="link2"></div>
+	<div><img src = "croppedImages/link-hor.png" id="link3" alt="link3"></div>
+	<div><img src = "croppedImages/link-ver.png" id="link4" alt="link4"></div>
+	<div><img src = "croppedImages/link-hor.png" id="link5" alt="link5"></div>
+	
+	<div id="divineRoll">
+		<form>
+			<label for="divine11">Worst:</label>
+			<input type="text" id="divineWorst" value = 0 readonly="readonly"><br>
+			<label for="divine2">Better:</label>
+			<input type="text" id="divineBetter" value = 0 readonly="readonly"><br>
+			<label for="divine3">Average:</label>
+			<input type="text" id="divineAverage" value = 0 readonly="readonly"><br>
+			<label for="divine4">Superb:</label>
+			<input type="text" id="divineSuperb" value = 0 readonly="readonly"><br>
+			<label for="divine5">Ideal:</label>
+			<input type="text" id="divineIdeal" value = 0 readonly="readonly"><br>
+			<label for="divine6">Perfect:</label>
+			<input type="text" id="divinePerfect" value = 0 readonly="readonly"><br>
+		</form>
+	</div>
+	
+	<a href="index.htm"><h3>Return Home</h3></a>
+	
+	<div class="PoESurvey">
+		<form action="index.htm">
+			<fieldset>
+				<span class="noWrap"><label required>Have you played Path of Exile?</label></span><br>
+				<input type="radio" name="player" value="yes" required>Yes
+				<input type="radio" name="player" value="no">No
+			</fieldset>
+			<fieldset>
+				<span class="noWrap"><label>How easy was the process?</label></span><br>
+				<input type="radio" name="easeToUse" value="1" required>1
+				<input type="radio" name="easeToUse" value="2">2
+				<input type="radio" name="easeToUse" value="3">3
+				<input type="radio" name="easeToUse" value="4">4
+				<input type="radio" name="easeToUse" value="5">5
+			</fieldset>
+			<fieldset>
+				<span class="noWrap"><label>Was the process understandable?</label></span><br>
+				<input type="radio" name="understand" value="1" required>1
+				<input type="radio" name="understand" value="2">2
+				<input type="radio" name="understand" value="3">3
+				<input type="radio" name="understand" value="4">4
+				<input type="radio" name="understand" value="5">5
+			</fieldset>
+			<fieldset>
+				<span class="noWrap"><label>How satisfied are you with PoELinker?</label></span><br>
+				<input type="radio" name="satisfaction" value="1" required>1
+				<input type="radio" name="satisfaction" value="2">2
+				<input type="radio" name="satisfaction" value="3">3
+				<input type="radio" name="satisfaction" value="4">4
+				<input type="radio" name="satisfaction" value="5">5
+			</fieldset>
+			<fieldset>
+				<span class="noWrap"><label>How did you find PoELinker?</label></span><br>
+					<select name="heardFrom" style="margin-bottom: 10px; margin-left: 15px;" required>
+						<option value="">Select an option</option>
+						<option value="search">Search engine</option>
+						<option value="reddit">Reddit</option>
+						<option value="friend">Friend</option>
+						<option value="other">Other</option>
+					</select>
+					<input type="text" name="otherOption" placeholder="Other">
+			</fieldset>
+			<fieldset>
+				<span class="noWrap"><label>Did you notice any errors on PoELinker?</label></span><br>
+				<textarea rows="4" cols="40" placeholder="Optional"></textarea>
+			</fieldset>
+			<button type="submit" value="Submit">Submit</button>
+			<button type="reset"  value="Reset">Reset</button><br><br><br>
+		</form>
+	</div>
+<div class="footer">
+	<p>This site is not associated with <a href="http://www.grindinggear.com/">Grinding Gear Games</a> in any way.</p>
+</div>
+</body>
+</html>

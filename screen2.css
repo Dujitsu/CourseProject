@@ -1,0 +1,223 @@
+.rareDropdown ul, .uniqueDropdown ul{
+  text-align: center;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);}
+.rareDropdown ul li, .uniqueDropdown ul li {
+  border: 2px solid #fff;
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;}
+.rareDropdown ul li:hover, .uniqueDropdown ul li:hover {
+  background: #555;
+  color: #fff;}
+.rareDropdown ul li ul, .uniqueDropdown ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;}
+.rareDropdown ul li ul li, .uniqueDropdown ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;}
+.rareDropdown ul li ul li:hover, .uniqueDropdown ul li ul li:hover { background: #666; }
+.rareDropdown ul li:hover ul, .uniqueDropdown ul li:hover ul {
+  border: 2px solid #e6e6ff;
+  display: block;
+  opacity: 1;
+  visibility: visible;}
+ /* The above was aided by http://cssdeck.com/labs/another-simple-css3-dropdown-menu */
+
+label{
+	float: left;
+	width: 5em;
+	text-align: right;
+	font-weight: bold;}
+input{
+	margin-left: 1em;
+	margin-bottom: .5em;}
+fieldset{ border: none;}
+
+#soloSocket, #socket1, #socket2, #socket3, #socket4, #socket5, #socket6, #link1, #link2, #link3, #link4, #link5{
+	display: none; /* important */
+	position: fixed;
+	transform: translate(-50%, -50%);}
+#soloSocket{
+	display: none;
+	top: 50.5%;
+	left: 50%;}
+#socket1{ 	
+	top: 45%;
+	left: 48.6%;}
+#socket2{
+	top: 45%;
+	left: 51.4%;}
+#socket3{
+	top: 50.5%;
+	left: 51.4%;}
+#socket4{
+	top: 50.5%;
+	left: 48.6%;}
+#socket5{
+	top: 56%;
+	left: 48.6%;}
+#socket6{
+	top: 56%;
+	left: 51.4%;}
+#link1{
+	top: 45%;
+	left: 50%;}
+#link2{
+	top: 47.6%;
+	left: 51.4%;}
+#link3{
+	top: 50.5%;
+	left: 50%;}
+#link4{
+	top: 53%;
+	left: 48.5%;}
+#link5{
+	top: 56%;
+	left: 50%;}
+.rareDropdown{
+	position: fixed;
+	top: 25%;
+	left: 41%;
+	transform: translate(-50%, -50%);}
+.uniqueDropdown{
+	position: fixed;
+	top: 25%;
+	left: 58%;
+	transform: translate(-50%, -50%);}
+.forReference{
+	position: fixed;
+	top: 50%;
+	left: 43%;
+	transform: translate(-50%, -50%);}
+.rectangle{           /* .rectangle was aided from https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
+	/*background-image: url("images/TestShavs.png");*/
+	/*background-size: 100% 100%;*/
+	background-color: #d9d9d9;
+	background-repeat: no-repeat;
+	display: block;
+	border: 4px black solid;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 116px;
+	height: 233px;
+	opacity: .5;
+	transform: translate(-50%, -50%);}
+
+#useJeweller, #useFusing, #useChromatic, #useDivine{
+	border: 2px green solid;
+	width: 130px;
+	position: fixed;
+	top: 35%;
+	left: 46.5%;}
+.HomeIntro{
+	text-align:center;}
+#container{
+	position: fixed;
+	top: 25%;
+	left: 43%;
+	width: 300px;
+	margin: auto;
+	text-align: center;}
+#jewellerIntro, #fusingIntro, #chromaticIntro, #divineIntro{
+	text-align: center;
+	position: fixed;
+	top: 10%;
+	left: 37%;}
+#sockets, #links, #chromaticColors, #divineRoll{
+	text-align: left;
+	position: fixed;
+	top: 38%;
+	left: 53%;
+	height: 100px;
+	margin: 0;
+	padding: 0;}
+h3{
+	position: fixed;
+	top: 63%;
+	left: 46%;
+	width: 160px;
+	margin: auto;
+	text-align: center;}
+h3:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;}
+.footer {
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+	margin: 0;
+	clear:both;
+	width:25%;}
+.noWrap{
+	white-space: nowrap;}
+							/* the following were obtained from http://matthewjamestaylor.com/blog/perfect-3-column.htm under free use */
+	
+body {
+	margin: auto;
+	padding:0;
+	border:0;
+	width:100%;
+	background:#d9d9d9;
+	min-width:600px;
+	font-size:90%;}
+a {
+	color:#369;}
+a:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;}
+h1, h2 {
+	margin:.8em 0 .2em 0;
+	padding:0;}
+#header {
+	clear:both;
+	float:center;
+	width:100%;}
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;}
+#navigation{
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	border-bottom:1px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:left;
+	font-size: 110%;
+	font-weight: bold;}
